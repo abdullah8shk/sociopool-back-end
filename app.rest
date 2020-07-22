@@ -1,0 +1,38 @@
+//Add User
+POST http://localhost:3010/api/user
+Content-Type: application/json
+
+{
+    "userName": "niranjan"
+}
+###
+
+//GET All User
+GET  http://localhost:3010/api/user
+Content-Type: application/json
+###
+
+//GET All Distances
+GET  http://localhost:3010/api/distanceRecord
+Content-Type: application/json
+###
+
+//Add Distance
+POST http://localhost:3010/api/distanceRecord
+Content-Type: application/json
+
+{
+    "distanceTravelled": "30",
+    "startTime":"7pm",
+    "endTime":"8pm"
+}
+###
+
+//Set Distance in User
+POST http://localhost:3010/api/user/5f16cc18223d291ea8b1eb42
+Content-Type: application/json
+
+{
+    "id": "5f16e38a28836e1a68d7550a"
+}
+###
